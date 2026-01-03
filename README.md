@@ -1,6 +1,6 @@
 # VisionFocus Hours · 专注时光愿景板
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-Non--Commercial-red.svg)
 ![Web3 Ready](https://img.shields.io/badge/Web3-Hackathon_Project-purple.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)
 
@@ -108,6 +108,17 @@ vision-focus-hours/
 - 📅 移动端适配优化
 - 📅 IPFS去中心化存储
 - 📅 多链支持 (Polygon, Arbitrum)
+
+## 📄 许可证
+
+本项目采用**非商业许可证**，详情请参阅 [LICENSE](LICENSE) 文件。
+
+### 许可证要点
+- ✅ **允许**：个人使用、学习、教育用途、开源贡献
+- ❌ **禁止**：商业使用、闭源分发、商标商业使用
+- 📧 **商业许可**：如需商业使用，请联系项目维护者获取商业许可
+
+**重要提示**：使用本软件即表示您同意遵守许可证条款。违反许可证的行为可能导致法律后果。
 
 ## 🏗 开发指南
 
