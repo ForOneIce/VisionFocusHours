@@ -3,6 +3,7 @@
 ![License](https://img.shields.io/badge/license-Non--Commercial-red.svg)
 ![Web3 Ready](https://img.shields.io/badge/Web3-Hackathon_Project-purple.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)
+![Status](https://img.shields.io/badge/status-MVP_Ready-green.svg)
 
 > ✨ 用专注时光，显化你的愿景 ✨  
 > 一个结合冥想引导、愿景可视化与时间投资的Web3 DApp
@@ -23,91 +24,175 @@
 
 - 🌐 **在线演示**: [百炼成真](https://vision-focus-hours.vercel.app/)
 - 📱 **桌面版优先**: 最佳体验在桌面/平板浏览器
-- 🔗 **测试网**: Sepolia测试网NFT铸造
+- 🔗 **测试网**: Sepolia测试网NFT铸造（支持模拟模式）
 
 ## ✨ 核心功能
 
 ### 🧘 沉浸式冥想引导
-- 温暖的女声引导 + 温馨背景音乐
-- 呼吸动画 + 打字机效果文字
-- 专业心理咨询师般的问题设计
+- ✅ 5阶段专业冥想流程
+- ✅ 自动引导模式（可手动控制）
+- ✅ 背景音乐控制（M键切换）
+- ✅ 旁白控制（V键切换）
+- ✅ 呼吸动画 + 动态背景切换
+- ✅ 完成后的星球进入动画
+
+### 💭 愿望碎片输入
+- ✅ 1-12个愿望输入
+- ✅ 智能类型识别和图标匹配
+- ✅ 动态添加/删除愿望
+- ✅ 示例关键词快速添加
+- ✅ 键盘快捷键支持
 
 ### 🎨 手绘风格愿景板编辑器
-- 上传图片关联每个愿望
-- 多种相框、贴纸、布局选择
-- 温暖治愈的UI/UX设计
+- ✅ 拖拽排列愿望项目
+- ✅ 图片上传功能（转base64存储）
+- ✅ 多种相框选择
+- ✅ 贴纸添加功能
+- ✅ 背景选择
+- ✅ 文字编辑、缩放、旋转
+- ✅ 完整愿景板图片保存（html2canvas）
 
 ### ⏳ 专注时光记录（核心创新）
-- **存入专注时光**：1小时专注 = 1个"时光币"
-- **视觉显化系统**：
-  - 10小时：星星点点效果
-  - 30小时：微光荧光效果  
-  - 60小时：金色流光效果
-  - 100小时：钻石七彩流光效果
-- **多巴胺反馈**：投币动画 + 风铃音效
+- ✅ **存入专注时光**：1小时专注 = 1个"时光币"
+- ✅ **视觉显化系统**：
+  - 10小时：星星点点效果 ✨
+  - 30小时：微光荧光效果 🌟
+  - 60小时：金色流光效果 ⭐
+  - 100小时：钻石七彩流光效果 💎
+- ✅ **多巴胺反馈**：投币动画 + 粒子特效
+- ✅ 里程碑提示和统计展示
+- ✅ 全屏模式
 
 ### 🔮 年度NFT纪念
-- 年终自动生成愿景板NFT
-- Sepolia测试网铸造
-- 记录一年专注时光的成就
+- ✅ NFT预览生成（完整愿景板渲染）
+- ✅ 真实区块链铸造（ERC-721标准）
+- ✅ 模拟模式支持（合约未部署时）
+- ✅ 铸造流程可视化
+- ✅ NFT详情展示和区块浏览器链接
+- ✅ 下载和分享功能
+
+### 🌌 星球轨迹展示
+- ✅ 轨道系统可视化
+- ✅ 真实星球数据加载
+- ✅ 智能路由系统
+- ✅ 信息面板展示
+- ✅ 时间轴导航
+
+### 🧠 智能路由系统
+- ✅ 根据完成状态自动跳转
+- ✅ 支持从任意入口进入正确页面
+- ✅ 状态徽章显示
 
 ## 🛠 技术栈
-前端： HTML5 · CSS3 · JavaScript (ES6+)
-动画： Lottie · CSS Animations
-Web3： Ethers.js · MetaMask集成
-存储： LocalStorage (v1) · 计划迁移IPFS
-设计： 手绘风格 · 响应式布局 · 暖色调
-音频： Web Audio API · 背景音乐系统
 
+### 前端
+- **HTML5** + **CSS3** + **JavaScript (ES6+)**
+- **模块化架构**：ES6 Modules
+- **纯静态网站**：无需构建工具，可直接部署
+
+### Web3
+- **Ethers.js v6**：Web3交互
+- **MetaMask集成**：直接使用 `window.ethereum` API
+- **智能合约**：ERC-721 NFT标准（OpenZeppelin）
+
+### 存储
+- **LocalStorage**：数据持久化（按年份隔离）
+- **状态管理**：完整的星球状态跟踪
+
+### 动画与视觉效果
+- **CSS Animations**：星空背景、过渡效果
+- **JavaScript动画**：投币效果、粒子特效
+- **html2canvas**：愿景板图片生成
+
+### 音频
+- **Web Audio API**：背景音乐和旁白播放
+- **音频控制**：音量、静音、淡入淡出
+
+### 部署
+- **Vercel**：一键部署（已配置 `vercel.json`）
+- **GitHub Pages**：支持静态部署
+- **无服务器**：纯前端实现
 
 ## 📁 项目结构
-vision-focus-hours/
-├── src/
-│ ├── pages/ # 5个主要页面
-│ │ ├── meditation/ # 冥想引导页
-│ │ ├── wishes-input/ # 愿望输入页
-│ │ ├── editor/ # 愿景板编辑页
-│ │ ├── fullscreen/ # 全屏查看页
-│ │ └── nft/ # NFT生成页
-│ ├── components/ # 可复用组件
-│ │ ├── WalletConnect/ # 钱包连接
-│ │ ├── PomodoroTimer/ # 番茄钟
-│ │ ├── CoinEffect/ # 投币动画
-│ │ └── VisionItem/ # 愿景碎片组件
-│ ├── assets/ # 静态资源
-│ │ ├── audio/ # 音效和音乐
-│ │ ├── images/ # 图片和贴纸
-│ │ └── animations/ # Lottie动画
-│ ├── styles/ # 全局样式
-│ └── utils/ # 工具函数
-├── docs/ # 项目文档
-├── contracts/ # 智能合约 (可选)
-└── tests/ # 测试文件
 
+```
+VisionFocusHours/
+├── src/                          # 源代码目录
+│   ├── index.html               # 启动页
+│   ├── pages/                   # 页面文件
+│   │   ├── home.html           # 星球首页
+│   │   ├── meditation.html     # 冥想引导页
+│   │   ├── dreamfragment.html # 愿望碎片输入页
+│   │   ├── visionboard.html    # 愿景板编辑器
+│   │   ├── hoursputin.html     # 专注时光投资页
+│   │   ├── NFT.html            # NFT生成与铸造页
+│   │   └── startresult.html    # 星球轨迹展示页
+│   ├── js/                      # JavaScript文件
+│   │   ├── config.js           # 全局配置
+│   │   ├── utils/              # 工具类
+│   │   │   ├── storage.js      # 数据管理
+│   │   │   ├── wallet.js       # 钱包连接
+│   │   │   ├── audio.js        # 音频系统
+│   │   │   ├── helpers.js      # 工具函数
+│   │   │   └── contract.js     # 合约交互
+│   │   └── animations/         # 动画效果
+│   │       ├── coin-effect.js  # 投币动画
+│   │       └── manifestation.js # 显化效果
+│   ├── css/                     # 样式文件
+│   │   ├── variables.css       # CSS变量
+│   │   ├── global.css          # 全局样式
+│   │   └── animations.css      # 动画样式
+│   └── assets/                  # 静态资源
+│       ├── audio/              # 音频文件
+│       ├── images/             # 图片资源
+│       └── animations/         # 动画资源
+├── contracts/                    # 智能合约
+│   └── VisionFocusHoursNFT.sol  # ERC-721 NFT合约
+├── scripts/                      # 部署脚本
+│   └── deploy.js               # 合约部署脚本
+├── docs/                         # 项目文档
+│   ├── smart-contract-documentation.md
+│   ├── api-documentation.md
+│   ├── routing-documentation.md
+│   └── dev/                     # 开发文档
+├── vercel.json                   # Vercel部署配置
+├── hardhat.config.js            # Hardhat配置
+├── package.json                 # 项目配置
+├── LICENSE                      # 许可证文件
+└── README.md                    # 本文件
+```
+```
 
-## 🎯 路线图
+## 🎯 功能路线图
 
-### P0 (核心功能 - 黑客松版本)
-- ✅ 钱包连接 (MetaMask)
-- ✅ 冥想引导流程
+### ✅ P0 - 核心功能（已完成）
+
+- ✅ 钱包连接（MetaMask）
+- ✅ 冥想引导流程（5阶段+音频）
 - ✅ 愿望碎片输入系统
-- ✅ 愿景板基础编辑器
-- ✅ 投币交互与显化效果
+- ✅ 愿景板编辑器（完整工具集）
+- ✅ 专注时光投资（投币动画+显化效果）
 - ✅ 本地存储与状态管理
-- ✅ Sepolia测试网NFT铸造
+- ✅ 智能路由系统
+- ✅ NFT生成与铸造（支持模拟模式）
+- ✅ 星球轨迹可视化
 
-### P1 (增强体验)
-- 🔄 番茄钟专注计时器
-- 🔄 更多贴纸和相框素材
-- 🔄 导出/导入愿景配置
-- 🔄 调试模式和演示功能
+### 🔄 P1 - 增强体验（计划中）
 
-### P2 (未来规划)
+- ⏳ 番茄钟专注计时器
+- ⏳ 更多贴纸和相框素材
+- ⏳ 导出/导入愿景配置
+- ⏳ 调试模式和演示功能
+- ⏳ 数据统计和可视化
+
+### 📅 P2 - 未来规划
+
 - 📅 季度回顾和统计数据
 - 📅 社交分享功能
 - 📅 移动端适配优化
 - 📅 IPFS去中心化存储
-- 📅 多链支持 (Polygon, Arbitrum)
+- 📅 多链支持
+- 📅 后端API集成
 
 ## 📄 许可证
 
@@ -123,28 +208,13 @@ vision-focus-hours/
 ## 🏗 开发指南
 
 ### 环境要求
-- Node.js 16+
-- MetaMask钱包
-- 现代浏览器 (Chrome/Firefox/Edge)
-
-### 快速开始
-```bash
-# 克隆项目
-git clone https://github.com/yourusername/vision-focus-hours.git
-cd vision-focus-hours
-
-# 安装依赖 (如果有构建步骤)
-npm install
-
-# 启动开发服务器
-npm run dev
-
-# 打开浏览器访问
-# http://localhost:3000
-
-
-用每一小时专注，绘制未来的自己
-Every hour focused, paints a clearer future.
+- **Node.js 16+**（仅用于智能合约开发）
+- **MetaMask钱包**（用于Web3功能）
+- **现代浏览器**（Chrome/Firefox/Edge，支持ES6 Modules）
 
 
 
+**用每一小时专注，绘制未来的自己**  
+*Every hour focused, paints a clearer future.*
+
+© 2026 VisionFocus Hours
