@@ -776,6 +776,12 @@
                 justify-content: center;
             }
         }
+        
+        /* Ko-fi 赞赏按钮样式 - 确保显示在左下角 */
+        #kofi-widget-overlay,
+        .kofi-widget-overlay {
+            z-index: 9999 !important;
+        }
     </style>
 </head>
 <body>
@@ -1461,6 +1467,17 @@
         // 暴露到全局(方便调试)
         window.walletManager = walletManager;
         window.storageManager = storageManager;
+    </script>
+    
+    <!-- Ko-fi 赞赏入口 -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('iceflake0', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': '',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
     </script>
 </body>
 </html>
